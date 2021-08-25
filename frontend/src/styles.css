@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+body {
+    line-height: 1;
+}
+
+.top-nav-button{
+    background: none;
+	color: inherit;
+    border: none;
+	font: inherit;
+    cursor: pointer;
+    color: white;
+    outline: inherit;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.cast-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: baseline;
+}
+
+.cast{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: auto;
+    align-items: center;
+    margin: 1.1rem;
+}
+
+.cast-image{
+        width: 130px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+}
+
+.next-prev-button{
+    background: none;
+	color: inherit;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.movie-container{
+    display: flex ;
+    top: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content : space-evenly
+}
+
+
+.movie{
+    padding: 1.2rem;
+    margin: 1.1rem;
+    background-color:rgb(194, 221, 245);
+    border-radius: 5%;
+    width: 220px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.movie img{
+    border-radius: 5%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.icon-inline-container{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.keyword-input{
+    position: sticky;
+    width: 100%;
+    padding: 15px;
+    top:50px;
+    border: none;
+    outline:none;
+    background-color: rgb(106, 146, 207);
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+
+.keyword-input:focus::placeholder{
+    opacity: 0;
+}
+
+.keyword-input::placeholder{
+    color:white;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+
+
+.nav-menu-item-circle{
+    background-color: rgb(73, 74, 75);
+    color: rgb(197, 206, 195);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 13px;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.current-page{
+    margin: 10px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.title-banner{
+    position: sticky;
+    width: 100%;
+    padding: 15px;
+    top:8vh;
+    text-align: center;
+    background-color: rgb(106, 146, 207);
+    color: ghostwhite
+}
+
+.top-nav-bar{
+    height: 8vh;
+    position: sticky;
+    top:0;
+    background-color: rgba(195, 204, 202);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-nav-menu{
+    background-color: rgb(223, 223, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1em;
+    flex: 1;
+    top: 8vh;
+    height: 92vh;
+    position: sticky;
+}
+
+.displayComponent{
+    background-color: whitesmoke;
+    padding: 1.1rem;
+    flex: 7;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.sidebar-displaycomponent-container{
+    display: flex;
+}
+
+.flex-container-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container-movie-detail{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.1rem;
+}
+
+.info-container-movie-detail{
+    flex: 2;
+    margin: 1.1rem;
+    font-size: 1.1rem;
+}
+
+.img-movie-detail{
+    flex: 1;
+    margin: 1.1rem;
+}
+
+.error-message{
+    color: red;
+    margin:5px;
+}
+
+.pagination{
+    margin: 1.1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+    .movie-container{
+        justify-content: space-evenly;
+    }
+
+    .flex-container-movie-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-nav-menu{
+        flex-direction: row;
+    }
+
+    .sidebar-displaycomponent-container{
+        flex-direction: column;
+    }
+
+    .side-nav-menu{
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    
+}
